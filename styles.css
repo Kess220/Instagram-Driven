@@ -1,0 +1,781 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin-bottom: 54px;
+    background-color: #fafafa;
+}
+
+
+
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 54px;
+    border: 1px solid #dbdbdb;
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+
+header .header-full {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+main {
+    position: relative;
+    height: calc(100% - 54px);
+    width: 935px;
+}
+
+
+
+ion-icon {
+    font-size: 17.87px;
+    color: black;
+}
+
+input[type=text] {
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    width: 100%
+}
+
+nav {
+    display: none;
+}
+
+
+
+nav :first-child {
+    color: black;
+}
+
+
+video {
+    width: 612px;
+    height: 612px;
+}
+
+.icons-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-left>a {
+    margin-top: 7px;
+    height: 29px;
+}
+
+.splitbar {
+    margin: auto 10px;
+    height: 22px;
+    width: 1px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.search-bar {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: #979797;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.icons-right {
+    width: 125px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .logo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.searchbar {
+    width: -10%;
+    text-align: end;
+}
+
+.searchbar input {
+    background-color: #fafafa;
+    padding: 5px;
+    text-indent: 21px;
+    outline: none;
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 2px;
+    color: rgb(77, 77, 77);
+}
+
+.searchbar img {
+    position: absolute;
+    margin-left: -10.5rem;
+    margin-top: 0.25rem;
+}
+
+.searchbar input::placeholder {
+    font-weight: lighter;
+    color: rgb(172, 172, 172);
+}
+
+.nav-links {
+    font-weight: lighter;
+    color: rgb(172, 172, 172);
+}
+
+.nav-group .nav-item {
+    list-style-type: none;
+    margin: 0 8px;
+}
+
+.nav-group .nav-item a {
+    font-size: 22px;
+    display: block;
+    color: black;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action .profile {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    position: relative;
+    margin-top: 60px;
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col-9 {
+    display: flex;
+    width: 62%;
+    margin-top: 30px;
+}
+
+.statuses {
+    margin-bottom: 30px;
+    width: 614px;
+    height: 118px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0;
+    border-radius: 2px;
+    border: 1px solid rgb(218, 217, 217);
+    overflow-x: hidden;
+
+}
+
+.statuses .status {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: auto;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    background: linear-gradient(to right, red, orange);
+    padding: 2px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.statuses .status .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.statuses .status img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-3 {
+    width: 100%;
+    top: 90px;
+    position: fixed;
+    left: 800px;
+
+}
+
+.col-3 h4 {
+    color: rgb(100, 100, 100);
+}
+
+.col-3 .card {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.col-3 .card .top {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-3 .card .top a {
+    color: #1d92ff;
+}
+
+.col-3 .card .bottom {
+    padding: 10px 20px;
+}
+
+.col-3 .card .top .userDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.col-3 .card .top .userDetails h3 {
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.col-3 .card .top .userDetails h3 span {
+    font-size: 0.75em;
+}
+
+.col-3 .card .top .userDetails h3 span {
+    font-size: 0.75em;
+}
+
+.col-9 .card {
+    margin-bottom: 20px;
+    position: relative;
+    width: 614px;
+
+    display: inline-block;
+    border: 1px solid rgba(7, 7, 7, 0.24);
+}
+
+.col-9 .card .top {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-9 .card .bottom {
+    padding: 0px 20px;
+}
+
+.col-9 .card .top .userDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profilepic {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profilepic .profile_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to right, red, orange);
+    padding: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.profilepic .profile_img .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.profilepic .profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 612px;
+    height: 612px;
+    object-fit: cover;
+}
+
+.col-9 .card .top .userDetails h3 {
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.col-9 .card .top .userDetails h3 span {
+    font-size: 0.75em;
+}
+
+.col-9 .card .top .userDetails h3 span {
+    font-size: 0.75em;
+}
+
+.dot {
+    transform: scale(0.6);
+    cursor: pointer;
+}
+
+.imgBx {
+    position: relative;
+    width: 614px;
+    height: 612px;
+    margin: 10px 0 15px;
+}
+
+.actionBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionBtns svg {
+    cursor: pointer;
+}
+
+.actionBtns .left svg {
+    margin-right: 8px;
+}
+
+.likes {
+    font-weight: 500;
+    margin-top: 3px;
+    font-size: 14px;
+    color: #4d4d4f;
+    margin-left: 5px;
+
+}
+
+.message {
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5em;
+}
+
+.message b {
+    color: #262626;
+}
+
+.message span {
+    cursor: pointer;
+    color: #1d92ff;
+}
+
+.comments {
+    margin-top: 10px;
+    font-weight: 400;
+    color: #999;
+}
+
+.addComments {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.addComments a {
+    color: #1d92ffcb;
+    font-weight: 500;
+}
+
+.addComments .reaction {
+    position: relative;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: rgb(88, 88, 88);
+}
+
+input.text {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #262626;
+    background: none;
+}
+
+input.text::placeholder {
+    color: #777;
+}
+
+.postTime {
+    margin-top: 8px;
+    font-weight: lighter;
+    color: rgb(163, 163, 163);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.footer .footer-section {
+    margin-left: 0.5rem;
+    color: #C7C7C7;
+    font-size: 14px;
+    font-family: Roboto;
+
+}
+
+.footer a:hover {
+    color: #ff0000;
+}
+
+ion-icon {
+    width: 22.88px;
+    height: 22.88px;
+
+}
+
+
+.icon-responde {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+
+
+}
+
+div .post {
+    display: flex;
+}
+
+.card-aside {
+    height: 288px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.aside-followers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    align-items: center;
+}
+
+.aside-followers>div {
+    display: flex;
+    width: 56%;
+
+
+
+
+}
+
+.card {
+    margin-bottom: 60px;
+    height: 850px;
+}
+
+.perfilzinho {
+    display: flex;
+    border-bottom: 10px;
+    align-items: center;
+    ;
+}
+
+.perfilzinho>img {
+    margin-right: 17px;
+    margin-bottom: 24px
+}
+
+.footer {
+    margin-left: 20px;
+    margin-top: 33px;
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgzinha {
+    margin-right: 11px;
+}
+
+p {
+    color: #8E8E8E;
+
+}
+
+.seguir {
+    color: #139EF2;
+}
+
+.footer>div {
+    width: 328px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment {
+    margin-left: 20px;
+}
+
+.legenda {
+    margin-top: 10px;
+    color: #000000;
+}
+
+.vercomment {
+    margin-top: 10px;
+}
+
+
+
+.publi-and-comment {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    margin-top: 14px;
+}
+
+input .comment-inset {
+    padding: 20px;
+    padding-left: 1px;
+    text-align: initial;
+    width: 400px;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.publication {
+    background: transparent;
+    border: none;
+    color: #139EF2;
+}
+
+.pontinho {
+    margin-left: 400px;
+}
+
+.pontinho-bugado {
+    margin-left: 430px
+}
+
+.header-mobile {
+    display: none;
+}
+
+.slide-low {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.slide-low {
+    position: fixed;
+    top: 1274px;
+    left: 1px;
+    background-color: #fff;
+    border: 1px solid #DBDBDB;
+    padding: 0px 27.5px 0px 27.5px;
+}
+
+
+
+@media (max-width: 614px) {
+    header .header-full {
+        display: none;
+    }
+}
+
+@media (max-width: 614px) {
+    .header-mobile {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 620px) {
+    div .col-3 {
+        display: none;
+    }
+}
+
+@media (max-width:614px) {
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-left: 21.38px;
+    }
+}
+
+@media (max-width:614px) {
+    .paper-plane-mobile {
+        margin-right: 22.06px;
+    }
+}
+
+@media (max-width:614px) {
+    .statuses {
+
+        border: none;
+    }
+}
+
+@media (max-width:614px) {}
+
+.statuses .status {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: auto;
+    width: 66px;
+    height: 66px;
+
+    cursor: pointer;
+
+
+
+}
+
+@media (max-width: 614px) {
+    .statuses {
+        width: 614px;
+        height: 75px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: start;
+        border-radius: 2px;
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width: 614px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 614px) {
+    main {
+        justify-content: start;
+    }
+}
